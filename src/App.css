@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+  
+  html, body, #root {
+  width: 100%;
+  height: 3803px;
+  text-align: center;
+  background-color: #FBF8EC;
+  color: #414141; 
+   font-family: "Rubik", sans-serif;
+}
+p{
+  margin: 0;
+}
+.main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+a{
+  color: #414141;
+}
+
+a:hover{
+  color: #2b2b2b;
+}
+.card h1{
+  display: flex;
+  justify-content: flex-start;
+}
+.sale-head{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 132px;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  background-color: #FFF;
+  padding:0 132px;
+  align-content: flex-start;
+  z-index: +1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.logo{
+ display: flex;
+ flex-direction: row;
+ color: #414141;
+ gap: 10px;
+}
+
+.catalog{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  padding:0 20px;
+  color: aliceblue;
+  gap: 8px;
+  background-color: #70C05B;
+  border-radius: 4px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #414141;
+}
+.search-input{
+  border-radius: 3px;
+  width: 375px;
+  height: 40px;
+  padding-left: 16px;
+  border-color: #70C05B;
+  background-color: #FFF;
+  color: #414141;
+}
+.search svg{
+  position: absolute;
+  right: 12px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  font-size: 12px;
+}
+.menu p{
+  margin: 0;
+}
+.user-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-right: 23px;
+}
+.user-avatar{
+  width: max;
+  height: max;
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/patern.png');
+  color: #414141;
+  margin-top: 5px;
+}
+.main > .sale{
+  margin-top: 80px;
+}
+.card{
+  color: #414141;
+  display: flex;
+  flex-direction: column;
+}
+.image-card{
+  object-fit: cover;
+  width:272px;
+  height: 160px;
+}
+.productcards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 132px;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.productcard{
+  width: 272px;
+  height: 400px;
+  background-color: #FFFF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 8px;
+}
+.card-text{
+  padding: 0 8px;
+}
+.price-full{
+  display: flex;
+  justify-content: center;
+}
+.like-icon {
+  position: absolute;
+  font-size: 20px;
+  background-color: F3F2F1;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+}
+.like{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.image-card .sale{  
+  position: relative;
+}
+.new-product{
+  margin: 120px 0;
+}
+.sale > p{
+position: absolute;
+top: -60px;
+left: 8px;
+color: #FFF;
+padding: 4px;
+background-color: #FF6633;
+border-radius: 5px;
+}
+.sale-head > a{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.price{
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+}
+.price-text{
+  width: 256px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0;
+  margin: 0;
+}
+h4{
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+}
+.star{
+  font-size: 20px;
+  display: flex;
+  align-items: self-start;
+  color: #FF6633;
+}
+.card-button{
+  display: flex;
+  color: #70C05B;
+  background-color:#FFF;
+  border: 1px solid #70C05B;
+  width: 256px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+.card-button:hover{
+  color: #FFF;
+  background-color:#FF6633;
+  border-color: #FF6633;
+}
+
+.card-button:active{
+  background-color:#FF6633;
+  border-color:#FF6633;
+  color:#FFF;
+}
+h3{
+  padding: 0;
+  margin: 0;
+}
+h2{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  margin: 20px 0;
+}
+.new{
+  margin: 120px 0;
+}
+.offers{
+  margin: 120px 0;
+}
+.our-stores{
+  width: 100%;
+  text-align: left;
+}
+
+/* карта в сетке */
+.map-container{
+  padding: 0 132px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.card-offers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 132px;
+  margin-top: 40px;
+  gap: 40px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-offer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  width: 584px;
+  height: 200px;
+  text-align: left;
+  box-shadow: 0 12px 32px #c6a587 ;
+}
+.card-offer2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 584px;
+  height: 200px;
+  text-align:left;
+  background-color: #E5FFDE;
+  padding-right: 200px;
+}
+.offer-text{
+  padding-left: 40px;
+}
+.offer-img{
+  position: static;
+  margin-left: auto;
+  margin-right: 24px;
+}
+.card-offer2 .offer-img{
+  position: absolute;
+  right: 24px;
+  margin: 0;
+}
+.card-offer > img{}
+.city-location{
+  background-color: #F3F2F1;
+  color: #414141;
+  border-radius: 5px;
+
+}
+.button-location{
+  display: flex;
+  gap: 24px;
+  padding-left: 132px;
+  margin-bottom: 24px;
+  justify-content: flex-start;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* базовая кнопка */
+.city-location {
+  outline: none;          
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.city-location:focus {
+  outline: none;
+}
+.city-location:hover {
+  border-color: #70C05B;
+  background-color: #70C05B;  
+  color: #FFF;      
+}
+.newses{
+  display: flex;
+  flex-direction: row;
+}
+.news-section{
+  padding: 80px 0;
+}
+.news-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 132px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+}
+.news-text{
+  width: 376px;
+  height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: start;
+  padding: 10px;
+  
+  margin-top: 0;
+}
+.date{
+  margin: 0;
+}
+
+.btn-news{
+  display: flex;
+  color: #70C05B;
+  background-color: #E5FFDE;
+  border: 1px solid #70C05B;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-news:hover{
+  color: #FFF;
+  background-color:#70C05B;
+  border-color: #70C05B;
+}
+
+.btn-news:active{
+  border-color:#70C05B;
+  color:#FFF;
+}
+.footer-section{
+  width: 100%;
+  background-image: url('./assets/footer_patern.png');
+  background-color: #F9F4E2;
+  height: 126px;
+  display: flex;
+  align-items: center;
+
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 132px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.footer-menu{
+  display: flex;
+  gap: 25px;
+  margin-right: 80px;
+  margin-left: 40px;
+}
+.socseti{
+  width: 100%;
+  height: 100%;
+}
+.phone-info{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.dezign{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
