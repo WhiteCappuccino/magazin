@@ -16,17 +16,20 @@ const OurStores = () =>{
     //URL для карты в данном случае гугл. а также в ссылку вшиты координаты берущиеся из массива
     return(
         <div className="location">
-            <div className="button-location">
-                {cities.map((c) =>(
-                    <button
-                    key={c.key} //"id" для обновления DOM
-                    className='city-location' 
-                    onClick={() => setSelected(c)} //функция при клике вызывающая следущий элемень
-                    aria-pressed={selected.key===c.key} //показывает что кнопка активна
-                    >
-                        {c.label}
-                    </button>
-                ))}
+            <div className="sale-head">
+                <h1>Наши магазины</h1>
+                <div className="button-location">
+                    {cities.map((c) =>(
+                        <button
+                        key={c.key} //"id" для обновления DOM
+                        className='city-location' 
+                        onClick={() => setSelected(c)} //функция при клике вызывающая следущий элемень
+                        aria-pressed={selected.key===c.key} //показывает что кнопка активна
+                        >
+                            {c.label}
+                        </button>
+                    ))}
+                </div>
             </div>
             <div className="map-container">
                 <iframe 

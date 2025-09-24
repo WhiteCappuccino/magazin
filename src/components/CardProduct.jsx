@@ -6,7 +6,7 @@ import Product4 from '../assets/product4.png';
 import { CiHeart } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 
-const CardProduct = ({ showSale = false }) =>{   
+const CardProduct = ({ showSale = false, onAddToCart }) =>{   
     const productcard = [
         {id:1, image: Product1, like: 0, sale: '50', cardPrice: '44,50', usualPrice: '50,50', name:'Г/Ц Блинчики с мясом вес, Россия', rating:2,},
         {id:2, image: Product2, like: 0, sale: '50', cardPrice: '44,50', usualPrice: '50,50', name:'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...', rating:3,},
@@ -47,7 +47,7 @@ const CardProduct = ({ showSale = false }) =>{
                         <div className="star">
                         {'★'.repeat(Math.round(p.rating))}{'☆'.repeat(5 - Math.round(p.rating))}
                         </div>
-                        <button className="card-button">В корзину</button>
+                        <button className="card-button" onClick={() => onAddToCart && onAddToCart(p)}>В корзину</button>
                     </div>
                
                 </div> 

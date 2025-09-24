@@ -6,10 +6,10 @@ import { MdFavoriteBorder, MdOutlineReceiptLong, MdShoppingCart } from "react-ic
 import Avatar from "../assets/avatar.png"
 import { IoIosArrowDown } from "react-icons/io";
 
-const Header = () => {
+const Header = ({ cartCount = 0, onOpenCart, onGoHome }) => {
   return (
     <div className='container'>
-        <div className="logo">
+        <div className="logo" onClick={() => onGoHome && onGoHome()} style={{cursor:'pointer'}}>
             <img src={Logo} alt="логотип" />
             <p className="logo">СЕВЕРЯНОЧКА</p>
         </div>
@@ -34,8 +34,13 @@ const Header = () => {
         <MdOutlineReceiptLong size={28}/>
         <p>Заказы</p>
         </a>
-        <a href="#">
-            <MdShoppingCart size={28}/>
+        <a href="#" className="cart-link" onClick={(e) => { e.preventDefault(); onOpenCart && onOpenCart(); }}>
+            <div className="cart-icon-wrap">
+              <MdShoppingCart size={28}/>
+              {cartCount > 0 && (
+                <span className="cart-badge">{cartCount}</span>
+              )}
+            </div>
             <p>Корзина</p>
         </a>
        </div>
