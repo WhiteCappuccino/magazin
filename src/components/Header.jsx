@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
@@ -44,7 +45,7 @@ const Header = ({ cartCount = 0, onOpenCart, onGoHome }) => {
             <p>Корзина</p>
         </a>
        </div>
-        <a href="#" className="profile">
+        <Link to="/admin" className="profile">
             <div className="user-profile">
                 <div className="profile-info">
                 <img src={Avatar} alt="user_avatar" />
@@ -52,7 +53,7 @@ const Header = ({ cartCount = 0, onOpenCart, onGoHome }) => {
                 </div>
                 <IoIosArrowDown />
             </div>
-        </a>
+        </Link>
     </div>
   );
 };
